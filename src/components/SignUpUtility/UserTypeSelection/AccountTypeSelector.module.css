@@ -1,0 +1,62 @@
+.accountTypeSelectorWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
+  }
+  
+  .accountTypeOption {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .accountTypeBackground {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    min-height: 63px;
+    width: 100%;
+  }
+  
+  .accountTypeLabel {
+    position: absolute;
+    align-self: center;
+    z-index: 10;
+    color: rgba(0, 0, 0, 1);
+    white-space: nowrap;
+    padding: 10px;
+    font: 500 20px Roboto, sans-serif;
+  }
+  
+  .radioWrapper {
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .radioInput {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .customRadio {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid rgba(164, 164, 164, 1);
+    background-color: rgba(241, 252, 245, 1);
+  }
+  
+  .selected {
+    background-color: rgba(146, 227, 169, 1);
+  }

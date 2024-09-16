@@ -1,0 +1,24 @@
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(70, 114, 31, 1);
+    white-space: nowrap;
+    justify-content: start;
+    font: 600 40px Atma, sans-serif;
+  }
+  
+  .logoImage {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 28px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  .logoText {
+    align-self: stretch;
+    width: 115px;
+    margin: auto 0;
+  }

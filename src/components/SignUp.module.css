@@ -1,0 +1,29 @@
+.signupContainer {
+    line-height: 100vh;
+    width: 1600px;
+    display: flex;
+    /* max-width: 1306px; */
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: -5px;
+    padding: 200px 43px 264px;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 150px; */
+  }
+  
+  .contentWrapper {
+    align-self: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    align-self: stretch;
+    margin-top: 12px;
+    color: rgba(66, 65, 65, 1);
+    padding: 10px;
+    font: 600 20px Roboto, sans-serif;
+  }

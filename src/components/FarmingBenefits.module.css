@@ -1,0 +1,86 @@
+.farmingBenefits {
+    background-color: #fbf0dc;
+    padding: 0 70px;
+  }
+  
+  .benefitsContainer {
+    display: flex;
+    gap: 20px;
+    margin-top: -79px;
+    width: 100%;
+    max-width: 1214px;
+  }
+  
+  .farmerImage {
+    width: 40%;
+    aspect-ratio: 0.93;
+    object-fit: contain;
+  }
+  
+  .benefitsContent {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 113px;
+  }
+  
+  .benefitsTitle {
+    color: #274e27;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    font: 800 50px Inter, sans-serif;
+    margin-right: 57px;
+  }
+  
+  .benefitsDescription,
+  .supplyChainDescription {
+    color: #0c0101;
+    font: 500 25px Montserrat, sans-serif;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 14px;
+  }
+  
+  .supplyChainTitle {
+    color: #274e27;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    font: 800 50px Inter, sans-serif;
+    align-self: flex-end;
+    margin-top: 33px;
+  }
+  
+  .decorativeDivider {
+    width: 100%;
+    aspect-ratio: 1000;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 991px) {
+    .farmingBenefits {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  
+    .benefitsContainer {
+      flex-direction: column;
+    }
+  
+    .farmerImage,
+    .benefitsContent {
+      width: 100%;
+    }
+  
+    .benefitsContent {
+      margin-top: 40px;
+    }
+  
+    .benefitsTitle,
+    .supplyChainTitle {
+      font-size: 40px;
+      margin-right: 10px;
+    }
+  
+    .benefitsDescription,
+    .supplyChainDescription {
+      max-width: 100%;
+    }
+  }

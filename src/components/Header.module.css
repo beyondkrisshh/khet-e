@@ -1,0 +1,87 @@
+.header {
+    background-color: #4d8c5d;
+    display: flex;
+    width: 100%;
+    max-width: 1572px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 80px;
+  }
+  a{
+    text-decoration: none;
+    color: #0c0b0b;
+  }
+  .logoContainer {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 73px;
+    aspect-ratio: 0.53;
+    object-fit: contain;
+  }
+  
+  .companyName {
+    width: 195px;
+    aspect-ratio: 3.61;
+    object-fit: contain;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .navList {
+    color: #000;
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navLink {
+    color: #0c0b0b;
+    font: 600 25px Anek Devanagari, sans-serif;
+    text-decoration: none;
+  }
+  
+  .decorativeIcon {
+    width: 50px;
+    aspect-ratio: 1.09;
+    object-fit: contain;
+  }
+  
+  .loginButton {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    background-color: #92e3a9;
+    border: none;
+    border-radius: 50px;
+    color: #000;
+    font: 700 20px Montserrat, sans-serif;
+    padding: 10px 19px;
+    cursor: pointer;
+  }
+  
+  .loginIcon {
+    width: 31px;
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  
+    .navigation {
+      flex-wrap: wrap;
+    }
+  }

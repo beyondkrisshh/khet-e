@@ -28,7 +28,7 @@ function Hero() {
         <button className={styles.loginButton} 
          onClick={handleSignupClick}>
           <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7547ad68b09ebd457a261c4679292745689e004559566104345397edf6cca4d?placeholderIfAbsent=true&apiKey=219f75cafecb4ac4a0c58e2a8188f372" alt="" className={styles.loginIcon} />
-          Sign Up
+          SignUp
         </button>
       </div>
     </section>

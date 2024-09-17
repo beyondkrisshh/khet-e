@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    max-width: 1240px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 200px 200px 106px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(70, 114, 31, 1);
+    white-space: nowrap;
+    justify-content: start;
+    font: 600 40px Atma, sans-serif;
+  }
+  
+  .logoIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 28px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  .logoText {
+    align-self: stretch;
+    width: 115px;
+    margin: auto 0;
+  }
+  
+  .otpHeader {
+    align-self: start;
+    display: flex;
+    margin-top: 51px;
+    width: 219px;
+    max-width: 100%;
+    gap: 20px;
+    color: rgba(66, 65, 65, 1);
+    justify-content: space-between;
+    font: 600 20px Roboto, sans-serif;
+  }
+  
+  .arrowIcon {
+    aspect-ratio: 0.6;
+    object-fit: contain;
+    object-position: center;
+    width: 9px;
+    margin: auto 0;
+  }
+  
+  .otpLabel {
+    align-self: stretch;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .otpInputWrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .otpInput {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    min-height: 41px;
+    width: 100%;
+  }
+  
+  .decorativeImage {
+    object-fit: contain;
+    object-position: center;
+    width: 219px;
+    border-radius: 0;
+    z-index: 10;
+    margin-top: -30px;
+    max-width: 100%;
+  }
+  
+  .buttonWrapper {
+    display: flex;
+    margin-top: 91px;
+    width: 138px;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .button {
+    border-radius: 20px;
+    background-color: rgba(146, 227, 169, 1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    min-height: 35px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buttonText {
+    align-self: stretch;
+    z-index: 10;
+    margin-top: -48px;
+    gap: 10px;
+    color: rgba(54, 53, 53, 1);
+    white-space: nowrap;
+    padding: 10px;
+    font: 600 18px Roboto Flex, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }

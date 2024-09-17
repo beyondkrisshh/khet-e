@@ -1,0 +1,206 @@
+/* General container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align items horizontally */
+  max-width: 1400px; /* Increase the max-width for a wider container */
+  overflow: hidden;
+  padding: 30px 50px; /* Increase padding for better spacing */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Adjust for laptop and tablet screen sizes */
+@media screen and (max-width: 1366px) {
+  .container {
+    padding: 25px;
+    max-width: 1200px; /* Adjust max-width for tablet screens */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 20px;
+    max-width: 1000px; /* Adjust max-width for smaller tablets */
+  }
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centering the logo */
+  gap: 15px; /* Increase gap between logo icon and text */
+  color: rgba(70, 114, 31, 1);
+  font: 600 42px Atma, sans-serif; /* Increase font size for the logo */
+  text-align: center; /* Center text alignment */
+}
+
+/* Logo Icon */
+.logoIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 45px; /* Increase width of the logo icon */
+  margin: auto 0;
+}
+
+/* Logo Text */
+.logoText {
+  font-size: 1.2em; /* Increase font size for logo text */
+}
+
+/* Responsive logo adjustments */
+@media screen and (max-width: 1366px) {
+  .logo {
+    font-size: 38px;
+  }
+  .logoIcon {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    font-size: 34px;
+  }
+  .logoIcon {
+    width: 35px;
+  }
+}
+
+/* Progress Bar */
+/* Progress Bar */
+.progressBar {
+  align-self: center;
+  display: flex;
+  margin-top: 25px;
+  width: 100%;
+  max-width: 400px; /* Increase max-width for progress bar */
+  gap: 15px; /* Increase gap between progress steps */
+}
+
+/* Progress Step */
+.progressStep {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 10px; /* Increase padding for progress steps */
+}
+
+/* Progress Step Active and Inactive */
+.progressStepActive {
+  background-color: rgba(70, 114, 31, 1); /* Use a visible color */
+  border-radius: 25px;
+  height: 8px; /* Ensure enough height to be visible */
+  width: 100%;
+}
+
+.progressStepInactive {
+  background-color: rgba(200, 200, 200, 0.6); /* Lighter color for inactive steps */
+  border-radius: 25px;
+  height: 8px; /* Ensure enough height to be visible */
+  width: 100%;
+}
+
+
+/* Form Elements */
+.formHeader {
+  display: flex;
+  gap: 25px; /* Increase gap between form header elements */
+  margin-top: 25px;
+  color: rgba(66, 65, 65, 1);
+  font: 600 22px Roboto, sans-serif; /* Increase font size for form header */
+}
+
+/* Form Label */
+.formLabel {
+  color: rgba(66, 65, 65, 1); /* Darker color for better contrast */
+  margin-bottom: 8px; /* Increase space between label and input box */
+  font-weight: bold; /* Bold text to match the input text */
+  font-size: 16px; /* Increase size for better readability */
+  display: block; /* Ensures the label is above the input */
+  text-align: left; /* Aligns the label text to the left */
+}
+
+/* Form Input */
+.formInput {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2); /* Increase shadow size */
+  margin-top: 8px; /* Increase margin between label and input */
+  padding: 6px 12px; /* Increase padding for better input area */
+  font: bold 16px Roboto, sans-serif; /* Increase font size */
+  width: 70%; /* Increase width of input fields */
+  color: rgba(66, 65, 65, 1);
+}
+
+/* Smaller screens */
+@media screen and (max-width: 768px) {
+  .formLabel {
+    font-size: 14px; /* Slightly smaller font size for mobile */
+  }
+
+  .formInput {
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 80%;
+  }
+}
+
+.submitButtonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px; /* Increase margin for button wrapper */
+}
+
+.submitButton {
+  border-radius: 20px;
+  background-color: rgba(146, 227, 169, 1);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2); /* Increase shadow size */
+  min-height: 45px; /* Increase button height */
+  width: 180px; /* Increase button width */
+  font-size: 18px; /* Increase font size */
+  text-align: center;
+}
+
+.submitButtonText {
+  color: rgba(54, 53, 53, 1);
+  padding: 12px; /* Increase padding for button text */
+  font: 600 20px Roboto, sans-serif; /* Increase font size for button text */
+}
+
+/* Accessibility - Hidden elements */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* General layout for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+    max-width: 700px; /* Adjust max-width for smaller screens */
+  }
+
+  .logo {
+    font-size: 30px; /* Adjust font size for mobile */
+  }
+
+  .submitButton {
+    width: 160px; /* Adjust button width for mobile */
+    font-size: 16px;
+  }
+
+  .formInput {
+    padding: 8px 14px;
+    font-size: 16px;
+  }
+}

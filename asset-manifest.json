@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/khet-e/static/css/main.ca61bd4f.css",
+    "main.js": "/khet-e/static/js/main.d9d4a6e8.js",
+    "static/js/453.529ea234.chunk.js": "/khet-e/static/js/453.529ea234.chunk.js",
+    "index.html": "/khet-e/index.html",
+    "main.ca61bd4f.css.map": "/khet-e/static/css/main.ca61bd4f.css.map",
+    "main.d9d4a6e8.js.map": "/khet-e/static/js/main.d9d4a6e8.js.map",
+    "453.529ea234.chunk.js.map": "/khet-e/static/js/453.529ea234.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca61bd4f.css",
+    "static/js/main.d9d4a6e8.js"
+  ]
+}

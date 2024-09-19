@@ -11,6 +11,7 @@ import LandCropDetails from './SignUpUtility/Farmer/FarmerDetails2/LandCropDetai
 import CropOption from './SignUpUtility/Farmer/FarmerDetails2/CropOption';
 import KycForm from './SignUpUtility/Farmer/FarmerDetails3/KycForm';
 import FormField from './SignUpUtility/Farmer/FarmerDetails3/FormField';
+import {useNavigate} from 'react-router-dom';
 function Signup() {
     const progressSteps = [1, 2, 3, 4];
     const activeStep = 2;
@@ -22,10 +23,12 @@ function Signup() {
         { label: 'Step 4: Account Details' },
         { label: 'Step 5: Confirmation' },
       ];
-      
-      
+    const navigate = useNavigate();
     const [currentStep, setCurrentStep] = useState(0);
-
+    const showFarmerDashBoard=()=>{
+        // alert('Form submitted!');
+        navigate('/dashboard');
+    }
     const handleNext = () => {
         setCurrentStep((prevStep) => Math.min(prevStep + 1, steps.length - 1));
         
@@ -62,7 +65,7 @@ function Signup() {
                 ) : (
                 // <button onClick={() => alert('Form submitted!')}>Submit</button>
                 <div className={styles.buttonWrapper}>
-                  <button className={styles.continueButton} onClick={() => alert('Form submitted!')}>
+                  <button className={styles.continueButton} onClick={showFarmerDashBoard}>
                       <span className={styles.buttonText}>Submit</span>
                   </button>
                 </div> 
@@ -103,7 +106,7 @@ function Signup() {
                         ) : (
                         // <button onClick={() => alert('Form submitted!')}>Submit</button>
                         <div className={styles.buttonWrapper}>
-                        <button className={styles.continueButton} onClick={() => alert('Form submitted!')}>
+                        <button className={styles.continueButton} onClick={showFarmerDashBoard}>
                             <span className={styles.buttonText}>Submit</span>
                         </button>
                         </div> 
@@ -160,7 +163,7 @@ function Signup() {
                         ) : (
                         // <button onClick={() => alert('Form submitted!')}>Submit</button>
                         <div className={styles.buttonWrapper}>
-                        <button className={styles.continueButton} onClick={() => alert('Form submitted!')}>
+                        <button className={styles.continueButton} onClick={showFarmerDashBoard}>
                             <span className={styles.buttonText}>Submit</span>
                         </button>
                         </div> 
@@ -200,7 +203,7 @@ function Signup() {
                         ) : (
                         // <button onClick={() => alert('Form submitted!')}>Submit</button>
                         <div className={styles.buttonWrapper}>
-                        <button className={styles.continueButton} onClick={() => alert('Form submitted!')}>
+                        <button className={styles.continueButton} onClick={showFarmerDashBoard}>
                             <span className={styles.buttonText}>Submit</span>
                         </button>
                         </div> 
@@ -213,12 +216,12 @@ function Signup() {
             return <>
             <main className={styles.container}>
             <header className={styles.logo}>
-                <img 
+                {/* <img 
                 loading="lazy" 
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/7f395b72863cf1e4815bfd0e3b57518982b85aefd0b86eafd2ce712ea2d6986a?placeholderIfAbsent=true&apiKey=219f75cafecb4ac4a0c58e2a8188f372" 
                 className={styles.logoIcon} 
                 alt="Khet-E logo" 
-                />
+                /> */}
                 <h1 className={styles.logoText}>khet-E</h1>
             </header>
             
@@ -229,7 +232,7 @@ function Signup() {
                 className={styles.arrowIcon} 
                 alt="" 
                 />
-                <h2 className={styles.otpLabel}>Enter OTP(email)</h2>
+                <h2 className={styles.otpLabel}>Enter OTP</h2>
             </section>
             
             <form className={styles.otpInputWrapper}>
@@ -242,12 +245,12 @@ function Signup() {
                 />
             </form>
             
-            <img 
+            {/* <img 
                 loading="lazy" 
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/878d556b5ebdc27bdc75ddfd44f0d8f2205da5a90a3cf53714120ad6d54f8a05?placeholderIfAbsent=true&apiKey=219f75cafecb4ac4a0c58e2a8188f372" 
                 className={styles.decorativeImage} 
                 alt="" 
-            />
+            /> */}
             
             <div>
                         {currentStep > 0 && <button onClick={handlePrevious}>Previous</button>}
@@ -260,7 +263,7 @@ function Signup() {
                         ) : (
                         // <button onClick={() => alert('Form submitted!')}>Submit</button>
                         <div className={styles.buttonWrapper}>
-                        <button className={styles.continueButton} onClick={() => alert('Form submitted!')}>
+                        <button className={styles.continueButton} onClick={showFarmerDashBoard}>
                             <span className={styles.buttonText}>Submit</span>
                         </button>
                         </div> 

@@ -8,7 +8,8 @@ import About from './components/About';
 import Support from './components/Support';
 import Schemes from './components/Schemes';
 import Signup from './components/SignUp';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from "./components/FarmerDashBoard/DashBoard";
+import { BrowserRouter as Router, Route, Routes,useNavigate } from 'react-router-dom';
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/support" element={<Support />} />
         <Route path="/schemes" element={<Schemes />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>  
     </Router>
     

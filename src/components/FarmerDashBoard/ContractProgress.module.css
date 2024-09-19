@@ -1,0 +1,41 @@
+.contractProgress {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    padding: 16px 8px 25px 3px;
+    margin-top: 20px;
+  }
+  
+  .title {
+    font: 700 13px Inter, sans-serif;
+    color: #434341;
+    letter-spacing: -0.26px;
+    margin-bottom: 27px;
+  }
+  
+  .milestoneList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .milestone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .milestoneName,
+  .milestoneDate {
+    font: 400 10px 'Roboto Flex', sans-serif;
+    color: #000;
+    letter-spacing: -0.5px;
+  }
+  
+  .milestoneIcon {
+    width: 15px;
+    height: 18px;
+    margin: 9px 0;
+  }

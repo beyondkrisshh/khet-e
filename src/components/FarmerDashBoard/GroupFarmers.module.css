@@ -1,0 +1,52 @@
+.groupFarmers {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    padding: 17px 14px 41px;
+  }
+  
+  .title {
+    font: 600 15px Inter, sans-serif;
+    color: #000;
+    letter-spacing: -0.75px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+  }
+  
+  .createButton,
+  .joinButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 17px;
+    border-radius: 20px;
+    font: 500 15px 'Roboto Flex', sans-serif;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .createButton {
+    background-color: #92e3a9;
+  }
+  
+  .joinButton {
+    background-color: #fff;
+  }
+  
+  .buttonIcon {
+    width: 10px;
+    height: 13px;
+    margin-right: 5px;
+  }
+  
+  .orText {
+    font: 600 15px Inter, sans-serif;
+    color: #000;
+  }
